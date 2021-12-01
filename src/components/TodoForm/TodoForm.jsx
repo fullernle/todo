@@ -14,6 +14,7 @@ const TodoForm = (props) => {
     props.onSubmit({
       id: Math.floor(Math.random() * 100000),
       text: input,
+      isComplete: false,
     });
 
     setInput("");
