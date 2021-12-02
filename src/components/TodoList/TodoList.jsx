@@ -35,7 +35,7 @@ const TodoList = () => {
   };
 
   return (
-    <div>
+    <div className="todo-list">
       <h1>Today's Todo List!</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo

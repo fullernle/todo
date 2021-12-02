@@ -6,7 +6,7 @@ import { BsCheckCircle } from "react-icons/bs";
 const Todo = ({ todos, completeTodo, removeTodo }) => {
   return todos.map((todo, i) => (
     <div className={todo.isComplete ? "todo-row complete" : "todo-row"} key={i}>
-      {todo.text}
+      <div className="todo-text">{todo.text}</div>
       <BsCheckCircle
         key={todo.id}
         onClick={() => completeTodo(todo.id)}
