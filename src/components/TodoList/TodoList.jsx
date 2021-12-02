@@ -29,20 +29,20 @@ const TodoList = () => {
   };
 
   const removeTodo = (id) => {
-		const removedList = [...todoList].filter(todo => todo.id !== id);
+    const removedList = [...todoList].filter((todo) => todo.id !== id);
 
-		setTodoList(removedList);
-	};
+    setTodoList(removedList);
+  };
 
   return (
     <div>
       <h1>Today's Todo List!</h1>
       <TodoForm onSubmit={addTodo} />
-      <Todo 
-				todos={todoList} 
-				completeTodo={completeTodo} 
-				removeTodo={removeTodo}
-				/>
+      <Todo
+        todos={todoList}
+        completeTodo={completeTodo}
+        removeTodo={removeTodo}
+      />
     </div>
   );
 };
